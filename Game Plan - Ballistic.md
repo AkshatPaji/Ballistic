@@ -2,10 +2,10 @@ A basic B/W arcade style ping-pong game with many twists
 
 ---
 ## Assets List
-- #### ball
-- #### paddle
-- #### line
-- #### Font - Press_Start_2P
+- #### ball - assets/Sprites/ball.png (Custom Made)
+- #### paddle - assets\Sprites\paddle.png (Custom Made)
+- #### line - assets\Sprites\line.png (Custom Made)
+- #### Font - [Press_Start_2P - CodeMan38](https://fonts.google.com/specimen/Press+Start+2P)
 ---
 ## Features
 
