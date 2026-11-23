@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://w2leiimofadc"]
+
+[ext_resource type="PackedScene" uid="uid://c7tg6okjmjqjt" path="res://scenes/arena.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://cmac5yeluxxsx" path="res://scenes/ball.tscn" id="2_yqjtg"]
+
+[node name="Game" type="Node" unique_id=898051258]
+
+[node name="Arena" parent="." unique_id=1619989150 instance=ExtResource("1_uwrxv")]
+
+[node name="Ball" parent="." unique_id=282549383 instance=ExtResource("2_yqjtg")]
+position = Vector2(320, 180)

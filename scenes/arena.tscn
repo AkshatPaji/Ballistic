@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://c7tg6okjmjqjt"]
+
+[ext_resource type="Texture2D" uid="uid://hujadkjmatnf" path="res://assets/Sprites/line.png" id="1_e05a3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3ca1"]
+size = Vector2(704, 32)
+
+[node name="Arena" type="Node" unique_id=1619989150]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2116341324]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="WallStaticBody" type="StaticBody2D" parent="." unique_id=1461014002]
+
+[node name="TopCollisionBody" type="CollisionShape2D" parent="WallStaticBody" unique_id=1895213849]
+position = Vector2(320, -16)
+shape = SubResource("RectangleShape2D_p3ca1")
+
+[node name="BottomCollisionBody" type="CollisionShape2D" parent="WallStaticBody" unique_id=1137631124]
+position = Vector2(320, 376)
+shape = SubResource("RectangleShape2D_p3ca1")
+
+[node name="LineSprite2D" type="Sprite2D" parent="." unique_id=1303051382]
+position = Vector2(320, 180)
+scale = Vector2(1.0616114, 1.0026667)
+texture = ExtResource("1_e05a3")

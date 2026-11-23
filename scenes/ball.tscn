@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cmac5yeluxxsx"]
+
+[ext_resource type="Texture2D" uid="uid://butydrrbfh5eq" path="res://assets/Sprites/ball.png" id="1_7s4qf"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_f7cbr"]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p3ca1"]
+radius = 8.0
+
+[sub_resource type="Gradient" id="Gradient_7s4qf"]
+colors = PackedColorArray(1, 1, 1, 1, 0.13682574, 0.13682574, 0.13682568, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_cxlvu"]
+gradient = SubResource("Gradient_7s4qf")
+
+[sub_resource type="Curve" id="Curve_cxlvu"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.98958325, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_7s4qf"]
+curve = SubResource("Curve_cxlvu")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_w343b"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("CurveTexture_7s4qf")
+color_ramp = SubResource("GradientTexture1D_cxlvu")
+
+[node name="Ball" type="RigidBody2D" unique_id=282549383]
+physics_material_override = SubResource("PhysicsMaterial_f7cbr")
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1469778078]
+shape = SubResource("CircleShape2D_p3ca1")
+
+[node name="TailParticles2d" type="GPUParticles2D" parent="." unique_id=38823576]
+amount = 32
+texture = ExtResource("1_7s4qf")
+lifetime = 0.3
+fixed_fps = 0
+interpolate = false
+process_material = SubResource("ParticleProcessMaterial_w343b")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=602801688]
+texture = ExtResource("1_7s4qf")

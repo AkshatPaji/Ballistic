@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "734f9e8f55880635",
+    "type": "split",
+    "children": [
+      {
+        "id": "ebfe7e0562c4bd97",
+        "type": "tabs",
+        "dimension": 69.66019417475728,
+        "children": [
+          {
+            "id": "b120888bc93745af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Game Plan - Ballistic.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Game Plan - Ballistic"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ad1f91bec0b28f81",
+        "type": "tabs",
+        "dimension": 30.339805825242717,
+        "children": [
+          {
+            "id": "fe4609014e7b24ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Game Plan - Ballistic.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Game Plan - Ballistic"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eeba21ee0baccf35",
+    "type": "split",
+    "children": [
+      {
+        "id": "f872995f070ff89d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "305c3168a1ded964",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "811f4b32702792a9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "031f347a29f91b23",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "06963a174aed1540",
+    "type": "split",
+    "children": [
+      {
+        "id": "a010479dca1cda28",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97996e9cf46b784d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Game Plan - Ballistic.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "ad2ef050de77dd07",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Game Plan - Ballistic.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "f68db8bb50c48038",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d20c547e0e558154",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "acf20eaf99980f8b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Game Plan - Ballistic.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "fe4609014e7b24ff",
+  "lastOpenFiles": [
+    "scenes/ball.tscn6385633661.tmp",
+    "project.godot6344062344.tmp",
+    "project.godot6342470797.tmp",
+    "scenes/ball.tscn6278208323.tmp",
+    "scenes/game.tscn6260917218.tmp",
+    "scenes/ball.tscn5552983141.tmp",
+    "scenes/ball.tscn5046343725.tmp",
+    "scenes/ball.tscn",
+    "project.godot4809275344.tmp",
+    "scenes/arena.tscn4560899236.tmp",
+    "assets/Sprites/ball.png.import",
+    "assets/Sprites/ball.png",
+    "assets/Sprites/paddle.png",
+    "assets/Sprites/line.png",
+    "assets/ball.png",
+    "assets/paddle.png",
+    "assets/line.png",
+    "addons/godot_super-wakatime/README.md",
+    "icon.svg",
+    "Game Plan - Ballistic.md",
+    "Welcome.md"
+  ]
+}
