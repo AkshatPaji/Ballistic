@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var velocity_component: Node = $VelocityComponent
 
-var _ai_range: float = 320.0
+var _ai_range: float = 480.0
 
 
 func _ready() -> void:
@@ -15,12 +15,19 @@ func _physics_process(_delta: float) -> void:
 		return
 
 	if GameManager.ball.global_position.x > _ai_range && GameManager.ball.global_position.x < global_position.x && GameManager.ball.linear_velocity.x > 0:
-		var ball_y: float = GameManager.ball.global_position.y
+		var time_to_paddle: float = (global_position.x - 16.0 - GameManager.ball.global_position.x) / GameManager.ball.linear_velocity.x
+		var target_y: float = GameManager.ball.global_position.y + GameManager.ball.linear_velocity.y * time_to_paddle
+		while target_y < 8.0 || target_y > 352.0:
+			if target_y < 8.0:
+				target_y = 16.0 - target_y
+			else:
+				target_y = 704.0 - target_y
+
 		var direction: Vector2 = Vector2.ZERO
 
-		if ball_y < global_position.y:
+		if target_y < global_position.y - 4.0:
 			direction.y = -1.0
-		else:
+		elif target_y > global_position.y + 4.0:
 			direction.y = 1.0
 
 		velocity_component.move(self, direction)
