@@ -14,7 +14,7 @@ func _physics_process(_delta: float) -> void:
 		velocity_component.stop(self)
 		return
 
-	if GameManager.ball.global_position.x > _ai_range && GameManager.ball.linear_velocity.x > 0:
+	if GameManager.ball.global_position.x > _ai_range && GameManager.ball.global_position.x < global_position.x && GameManager.ball.linear_velocity.x > 0:
 		var ball_y: float = GameManager.ball.global_position.y
 		var direction: Vector2 = Vector2.ZERO
 
