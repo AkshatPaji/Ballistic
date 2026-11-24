@@ -16,6 +16,7 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="WallStaticBody" type="StaticBody2D" parent="." unique_id=1461014002]
+collision_mask = 0
 
 [node name="TopCollisionBody" type="CollisionShape2D" parent="WallStaticBody" unique_id=1895213849]
 position = Vector2(320, -16)

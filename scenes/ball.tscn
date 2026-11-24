@@ -29,6 +29,8 @@ scale_curve = SubResource("CurveTexture_7s4qf")
 color_ramp = SubResource("GradientTexture1D_cxlvu")
 
 [node name="Ball" type="RigidBody2D" unique_id=282549383]
+linear_velocity = Vector2(0, -100)
+collision_layer = 2
 physics_material_override = SubResource("PhysicsMaterial_f7cbr")
 gravity_scale = 0.0
 contact_monitor = true
