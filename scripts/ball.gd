@@ -32,10 +32,19 @@ func _respawn(serve_direction: float) -> void:
 	linear_velocity = Vector2.ZERO
 	hide()
 	await get_tree().create_timer(randf_range(1.0, 4.0)).timeout
-	global_position = Vector2(624.0 if serve_direction < 0.0 else 16.0, 180)
+
+	var arena_size: Vector2 = get_viewport_rect().size
+	var spawn_x: float = arena_size.x - 8.0 if serve_direction < 0.0 else 8.0
+	var spawn_y: float = 8.0 if randf() < 0.5 else arena_size.y - 8.0
+	global_position = Vector2(spawn_x, spawn_y)
+
 	show()
 	freeze = false
-	linear_velocity = Vector2(absf(START_VELOCITY.x) * serve_direction, 0.0)
+
+	var angle:float = deg_to_rad(randf_range(-50.0, 50.0))
+	var speed: float = absf(START_VELOCITY.x)
+
+	linear_velocity = Vector2(cos(angle) * serve_direction, sin(angle)) * speed
 	_is_respawning = false
 
 

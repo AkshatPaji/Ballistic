@@ -12,7 +12,7 @@ A basic B/W arcade style ping-pong game with many twists
 | Scorer  | Ball Hit | Ball Miss | Opponent Miss |
 | ------- | -------- | --------- | ------------- |
 | Player  | +2       | -5        | +10           |
-| Tracker | +1       | -10       | +5            |
+| Tracker | +-0      | -10       | +5            |
 
 ---
 
