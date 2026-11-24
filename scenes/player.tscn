@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://tp5adnfhrv5f"]
 
-[ext_resource type="Texture2D" uid="uid://c8fgi1yd8c7mr" path="res://assets/Sprites/paddle.png" id="1_3vyb7"]
+[ext_resource type="Texture2D" uid="uid://c1b8dfe78gnjo" path="res://assets/Sprites/paddle.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://dfuk6sec2555k" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="PackedScene" uid="uid://4v51xdeyhbu6" path="res://Components/velocity_component.tscn" id="2_qhqgy"]
 
@@ -21,7 +21,7 @@ script = ExtResource("1_g2els")
 shape = SubResource("RectangleShape2D_p3ca1")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=916625070]
-scale = Vector2(2.008086, 1.5)
+scale = Vector2(2, 1.5)
 texture = ExtResource("1_3vyb7")
 
 [node name="DeflectArea2D" type="Area2D" parent="." unique_id=2017204660]

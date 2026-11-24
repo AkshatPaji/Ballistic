@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cmac5yeluxxsx"]
 
 [ext_resource type="Texture2D" uid="uid://butydrrbfh5eq" path="res://assets/Sprites/ball.png" id="1_7s4qf"]
+[ext_resource type="Script" uid="uid://dx7t0k34eau7m" path="res://scripts/ball.gd" id="2_ball"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_f7cbr"]
 friction = 0.0
@@ -29,12 +30,12 @@ scale_curve = SubResource("CurveTexture_7s4qf")
 color_ramp = SubResource("GradientTexture1D_cxlvu")
 
 [node name="Ball" type="RigidBody2D" unique_id=282549383]
-linear_velocity = Vector2(0, -100)
 collision_layer = 2
 physics_material_override = SubResource("PhysicsMaterial_f7cbr")
 gravity_scale = 0.0
 contact_monitor = true
 max_contacts_reported = 1
+script = ExtResource("2_ball")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1469778078]
 shape = SubResource("CircleShape2D_p3ca1")

@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c7tg6okjmjqjt" path="res://scenes/arena.tscn" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://cmac5yeluxxsx" path="res://scenes/ball.tscn" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://tp5adnfhrv5f" path="res://scenes/player.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://buepyw51pe8wq" path="res://scenes/opponent.tscn" id="4_lbhrr"]
 
 [node name="Game" type="Node" unique_id=898051258]
 
@@ -10,6 +11,10 @@
 
 [node name="Ball" parent="." unique_id=282549383 instance=ExtResource("2_yqjtg")]
 position = Vector2(320, 180)
+linear_velocity = Vector2(0, 0)
 
 [node name="Player" parent="." unique_id=1434983822 instance=ExtResource("3_lnu2h")]
 position = Vector2(16, 180)
+
+[node name="Player2" parent="." unique_id=39765148 instance=ExtResource("4_lbhrr")]
+position = Vector2(624, 180)

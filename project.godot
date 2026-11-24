@@ -15,6 +15,11 @@ run/main_scene="uid://bptufpjk7dgpu"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameManager="*uid://1lvad5xmy2fg"
+Events="*uid://calin0w7m34bb"
+
 [debug]
 
 gdscript/warnings/unused_signal=0
