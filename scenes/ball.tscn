@@ -43,7 +43,7 @@ shape = SubResource("CircleShape2D_p3ca1")
 [node name="TailParticles2d" type="GPUParticles2D" parent="." unique_id=38823576]
 amount = 32
 texture = ExtResource("1_7s4qf")
-lifetime = 0.3
+lifetime = 0.2
 fixed_fps = 0
 interpolate = false
 process_material = SubResource("ParticleProcessMaterial_w343b")

@@ -1,6 +1,6 @@
 extends Node
 
-@export var max_speed: float = 200.0
+@export var max_speed: float = 300.0
 @export var acceleration: float = 25.0
 
 var _velocity: Vector2 = Vector2.ZERO
@@ -22,4 +22,4 @@ func stop(character_body: CharacterBody2D) -> void:
 
 func _accelerate_in_direction(direction: Vector2) -> void:
     var final_velocity: Vector2 = direction * max_speed
-    _velocity = _velocity.lerp(final_velocity, 1 - exp(-acceleration * get_process_delta_time()))
+    _velocity = _velocity.lerp(final_velocity, 1 - exp(-acceleration * get_physics_process_delta_time()))

@@ -1,8 +1,8 @@
 extends RigidBody2D
 
-const START_VELOCITY: Vector2 = Vector2(-100.0, 0.0)
+const START_VELOCITY: Vector2 = Vector2(300.0, 0.0)
 
-const MAX_BOUNCE_ANGLE_DEGREES: float = 60.0
+const MAX_BOUNCE_ANGLE_DEGREES: float = 65.0
 
 func _ready() -> void:
 	GameManager.ball = self
