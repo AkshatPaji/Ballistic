@@ -41,7 +41,7 @@ func _respawn(serve_direction: float) -> void:
 	show()
 	freeze = false
 
-	var angle:float = deg_to_rad(randf_range(-50.0, 50.0))
+	var angle:float = deg_to_rad(randf_range(-45.0, 45.0))
 	var speed: float = absf(START_VELOCITY.x)
 
 	linear_velocity = Vector2(cos(angle) * serve_direction, sin(angle)) * speed

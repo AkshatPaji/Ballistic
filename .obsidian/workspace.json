@@ -212,6 +212,7 @@
   },
   "active": "b120888bc93745af",
   "lastOpenFiles": [
+    "scripts/ball.gd4954586712.tmp",
     "scripts/events.gd.uid",
     "scripts/events.gd",
     "scripts/game_manager.gd6081416129.tmp",
@@ -222,7 +223,6 @@
     "scripts/ball.gd.uid",
     "scripts/ball.gd",
     "scripts/game_manager.gd.uid",
-    "scripts/game_manager.gd",
     "assets/Sprites/ball.png",
     "assets/Sprites/paddle.png",
     "assets/Sprites/line.png",
