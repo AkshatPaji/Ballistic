@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-const START_VELOCITY: Vector2 = Vector2(300.0, 0.0)
+const START_VELOCITY: Vector2 = Vector2(350.0, 0.0)
 
 const MAX_BOUNCE_ANGLE_DEGREES: float = 65.0
 

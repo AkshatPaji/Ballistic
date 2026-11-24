@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var velocity_component: Node = $VelocityComponent
 
-var _ai_range: float = 376.0
+var _ai_range: float = 320.0
 
 
 func _ready() -> void:
