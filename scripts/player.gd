@@ -1,11 +1,9 @@
 extends CharacterBody2D
 
-const START_POSITION: Vector2 = Vector2(16.0, 180.0)
-
 @onready var velocity_component: Node = $VelocityComponent
 
 func _ready() -> void:
-	pass
+	$DeflectArea2D.body_entered.connect(_on_deflect_area_body_entered)
 
 
 func _physics_process(_delta: float) -> void:
@@ -20,3 +18,9 @@ func _physics_process(_delta: float) -> void:
 func _get_direction() -> Vector2:
 	var y_movement: float = Input.get_axis("move_up", "move_down")
 	return Vector2(0, y_movement).normalized()
+
+
+func _on_deflect_area_body_entered(body: Node2D) -> void:
+	if body.has_method("bounce_from_paddle"):
+		var paddle_shape: RectangleShape2D = $CollisionShape2D.shape
+		body.bounce_from_paddle(1.0, global_position.y, paddle_shape.size.y)

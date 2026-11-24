@@ -12,7 +12,7 @@ size = Vector2(1, 72)
 
 [node name="Player" type="CharacterBody2D" unique_id=1434983822]
 collision_layer = 0
-collision_mask = 2
+collision_mask = 0
 script = ExtResource("1_8l8e6")
 
 [node name="VelocityComponent" parent="." unique_id=231456842 instance=ExtResource("2_w8tlm")]
@@ -25,6 +25,7 @@ scale = Vector2(2.008086, 1.5)
 texture = ExtResource("1_ocjdi")
 
 [node name="DeflectArea2D" type="Area2D" parent="." unique_id=2017204660]
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeflectArea2D" unique_id=903507721]
 position = Vector2(-8.5, 0)
