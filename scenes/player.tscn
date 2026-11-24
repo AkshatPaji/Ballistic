@@ -4,20 +4,38 @@
 [ext_resource type="Script" uid="uid://dfuk6sec2555k" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="PackedScene" uid="uid://4v51xdeyhbu6" path="res://Components/velocity_component.tscn" id="2_qhqgy"]
 
+[sub_resource type="Gradient" id="Gradient_qhqgy"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qhqgy"]
+gradient = SubResource("Gradient_qhqgy")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_p3ca1"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 98, 0)
+color_ramp = SubResource("GradientTexture1D_qhqgy")
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p3ca1"]
 size = Vector2(16, 72)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w343b"]
-size = Vector2(1, 72)
+size = Vector2(3, 72)
 
-[node name="Player" type="CharacterBody2D" unique_id=1434983822]
+[node name="Player2" type="CharacterBody2D" unique_id=1434983822]
 collision_layer = 0
 collision_mask = 0
 script = ExtResource("1_g2els")
 
 [node name="VelocityComponent" parent="." unique_id=231456842 instance=ExtResource("2_qhqgy")]
-max_speed = 300.0
 acceleration = 45.0
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=535378276]
+amount = 15
+texture = ExtResource("1_3vyb7")
+lifetime = 0.5
+fixed_fps = 0
+interpolate = false
+process_material = SubResource("ParticleProcessMaterial_p3ca1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=865611087]
 shape = SubResource("RectangleShape2D_p3ca1")
@@ -30,5 +48,5 @@ texture = ExtResource("1_3vyb7")
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeflectArea2D" unique_id=903507721]
-position = Vector2(8.5, 0)
+position = Vector2(7.5, 0)
 shape = SubResource("RectangleShape2D_w343b")
