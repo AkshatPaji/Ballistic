@@ -8,6 +8,9 @@ var _ai_range: float = 430.0
 func _ready() -> void:
 	$DeflectArea2D.body_entered.connect(_on_deflect_area_body_entered)
 
+var _tracking_offset: float = 0.0
+var _was_tracking: bool = false
+
 
 func _physics_process(_delta: float) -> void:
 	if not is_instance_valid(GameManager.ball):
@@ -23,6 +26,12 @@ func _physics_process(_delta: float) -> void:
 			else:
 				target_y = 704.0 - target_y
 
+		if not _was_tracking:
+			_tracking_offset = randf_range(-18.0, 18.0)
+			_was_tracking = true
+
+		target_y += _tracking_offset
+
 		var direction: Vector2 = Vector2.ZERO
 
 		if target_y < global_position.y - 4.0:
@@ -33,6 +42,7 @@ func _physics_process(_delta: float) -> void:
 		velocity_component.move(self, direction)
 
 	else:
+		_was_tracking = false
 		velocity_component.stop(self)
 
 	var paddle_shape: RectangleShape2D = $CollisionShape2D.shape
