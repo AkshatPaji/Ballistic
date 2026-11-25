@@ -34,6 +34,7 @@ func _physics_process(_delta: float) -> void:
 		if score_ui.player_score < 0 or score_ui.opponent_score < 0:
 			_reset_game_pending = true
 			_reset_ball_to_center()
+			score_ui.show_game_over("OPPONENT")
 		else:
 			_respawn(-1.0)
 	elif global_position.x > arena_width + 8.0:
@@ -42,6 +43,7 @@ func _physics_process(_delta: float) -> void:
 		if score_ui.player_score < 0 or score_ui.opponent_score < 0:
 			_reset_game_pending = true
 			_reset_ball_to_center()
+			score_ui.show_game_over("PLAYER")
 		else:
 			_respawn(1.0)
 

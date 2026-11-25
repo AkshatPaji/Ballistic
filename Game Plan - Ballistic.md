@@ -11,8 +11,8 @@ A basic B/W arcade style ping-pong game with many twists
 
 | Scorer  | Ball Hit | Ball Miss | Opponent Miss |
 | ------- | -------- | --------- | ------------- |
-| Player  | +1       | -3        | +5            |
-| Tracker | +-0      | -1        | +5            |
+| Player  | +2       | -3        | +5            |
+| Tracker | +1       | -2        | +5            |
 
 ---
 
