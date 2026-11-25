@@ -49,9 +49,10 @@ func _physics_process(_delta: float) -> void:
 	var half_height: float = paddle_shape.size.y * 0.5
 	global_position.y = clampf(global_position.y, half_height, 360.0 - half_height)
 
+@onready var score_ui: ScoreUIController = get_node("../../ScoreUI")
 
 func _on_deflect_area_body_entered(body: Node2D) -> void:
 	if body.has_method("bounce_from_paddle"):
 		var paddle_shape: RectangleShape2D = $CollisionShape2D.shape
 		body.bounce_from_paddle(-1.0, global_position.y, paddle_shape.size.y)
-
+		score_ui.opponent_hit_ball()
