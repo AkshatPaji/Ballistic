@@ -212,6 +212,7 @@
   },
   "active": "b120888bc93745af",
   "lastOpenFiles": [
+    "scenes/score_ui.tscn12577062988.tmp",
     "scenes/score_ui.tscn1907458457.tmp",
     "scenes/score_ui.tscn1846305146.tmp",
     "scenes/score_ui.tscn1772760807.tmp",
@@ -222,7 +223,6 @@
     "assets/Font/PressStart2P-Regular.ttf.import4393303.tmp",
     "project.godot3394831.tmp",
     "assets/Font/PressStart2P-Regular.ttf.import",
-    "assets/Font/PressStart2P-Regular.ttf",
     "assets/Sprites/ball.png",
     "assets/Sprites/paddle.png",
     "assets/Sprites/line.png",

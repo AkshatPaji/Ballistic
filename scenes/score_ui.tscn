@@ -133,7 +133,6 @@ layout_mode = 2
 
 [node name="RestartHint" type="Label" parent="GameOver/PanelContainer/VBoxContainer" unique_id=1905621738]
 layout_mode = 2
-text = "Hit Space to Restart"
 label_settings = SubResource("LabelSettings_npyp2")
 horizontal_alignment = 1
 vertical_alignment = 1

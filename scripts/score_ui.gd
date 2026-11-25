@@ -12,6 +12,7 @@ var opponent_score: int = 0
 @onready var winner_label: Label = $GameOver/PanelContainer/VBoxContainer/WinnerLabel
 @onready var restart_hint: Label = $GameOver/PanelContainer/VBoxContainer/RestartHint
 
+
 func _update_score() -> void:
 	player_score_label.text = str(player_score)
 	opponent_score_label.text = str(opponent_score)
@@ -37,12 +38,14 @@ func player_missed() -> void:
 	player_score -= 3
 	opponent_score += 5
 	_update_score()
+	GameManager.ball.hide()
 
 
 func opponent_missed() -> void:
 	opponent_score -= 2
 	player_score += 5
 	_update_score()
+	GameManager.ball.hide()
 
 
 func reset_game() -> void:
@@ -60,5 +63,6 @@ func reset_game() -> void:
 
 func show_game_over(winner: String) -> void:
 	winner_label.text = "GAME OVER \n"+ winner + " WINS!"
+	restart_hint.text = "Hit 'Space' to restart"
 	game_over.show()
 	restart_hint.show()
